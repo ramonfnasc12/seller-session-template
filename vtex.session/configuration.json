@@ -1,0 +1,14 @@
+{
+  "search": {
+    "input": {
+      "public": [
+        "facets"
+      ]
+    },
+    "output": {
+      "search": [
+        "facets"
+      ]
+    }
+  }
+}
