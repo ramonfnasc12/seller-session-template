@@ -15,7 +15,7 @@ export class SearchSegment extends AppGraphQLClient {
       ...options,
       headers: {
         ...options?.headers,
-        'x-vtex-provider': 'vtex.search-segment-resolver@0.1.0',
+        'x-vtex-provider': 'vtex.search-segment-graphql@0.1.0',
       },
     })
   }
