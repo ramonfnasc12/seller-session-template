@@ -2,7 +2,7 @@ export const parseFacetsString = (facetsStr: string): SelectedFacet[] => {
   const selectedFacets: SelectedFacet[] = []
 
   if (!facetsStr) {
-    selectedFacets
+    return selectedFacets
   }
 
   facetsStr.split(';').forEach((facetStr) => {
