@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+- Undefined variable on `parseFacetsString` function.
+
 ## [0.2.1] - 2021-10-11
 
 ### Fixed
