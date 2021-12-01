@@ -1,13 +1,13 @@
 import type { ClientsConfig } from '@vtex/api'
 import { IOClients } from '@vtex/api'
 
-import { SearchSegment } from './search-segment'
+import { GraphQLServer } from './graphqlServer'
 
 const MEDIUM_TIMEOUT_MS = 2 * 1000
 
 export class Clients extends IOClients {
-  public get searchSegment(): SearchSegment {
-    return this.getOrSet('searchSegment', SearchSegment)
+  public get graphqlServer(): GraphQLServer {
+    return this.getOrSet('graphqlServer', GraphQLServer)
   }
 }
 

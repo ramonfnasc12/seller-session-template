@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+- Use `graphql-server` instead of a hardcoded version of the `search-segment-resolver`.
+
 ## [0.2.2] - 2021-10-18
 
 ### Fixed
