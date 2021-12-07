@@ -6,7 +6,7 @@
   "description": "App to control the search namespace",
   "categories": [],
   "dependencies": {
-    "vtex.search-segment-resolver": "0.x"
+    "vtex.graphql-server": "1.x"
   },
   "builders": {
     "node": "6.x",
@@ -28,7 +28,7 @@
       "name": "colossus-write-logs"
     },
     {
-      "name": "vtex.search-segment-resolver:resolve-graphql"
+      "name": "vtex.graphql-server:resolve-graphql"
     }
   ],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
