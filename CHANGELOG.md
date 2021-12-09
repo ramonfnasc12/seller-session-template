@@ -7,7 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## [0.2.3] - 2021-12-07
+### Fixed
+- Mute `No app installed in this workspace implements the schema from vtex.search-segment-graphql@*` error.
+
+## [0.2.3] - 2021-12-07 [YANKED]
 
 ### Fixed
 - Use `graphql-server` instead of a hardcoded version of the `search-segment-resolver`.
