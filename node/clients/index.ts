@@ -3,7 +3,7 @@ import { IOClients } from '@vtex/api'
 
 import { GraphQLServer } from './graphqlServer'
 
-const MEDIUM_TIMEOUT_MS = 5 * 1000
+const MEDIUM_TIMEOUT_MS = 2 * 1000
 
 export class Clients extends IOClients {
   public get graphqlServer(): GraphQLServer {
