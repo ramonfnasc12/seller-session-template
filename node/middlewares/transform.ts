@@ -36,7 +36,7 @@ export async function transform(ctx: Context, next: () => Promise<any>) {
           isAuthenticated,
           selectedFacets: facets,
         },
-        { metric: 'search-segment' }
+        { metric: 'search-segment', cacheable: 0 }
       )
     ).data?.searchSegment
   } catch (error) {

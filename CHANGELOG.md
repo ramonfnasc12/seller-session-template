@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+-  Remove cache from search-segment-resolver.
+
 ## [0.2.5] - 2022-01-20
 
 ### Changed
