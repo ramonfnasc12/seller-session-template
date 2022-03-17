@@ -6,7 +6,8 @@
   "description": "App to control the search namespace",
   "categories": [],
   "dependencies": {
-    "vtex.graphql-server": "1.x"
+    "vtex.graphql-server": "1.x",
+    "vtex.search-segment-graphql": "0.x"
   },
   "builders": {
     "node": "6.x",

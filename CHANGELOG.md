@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+- `vtex.search-segment-graphql` as dependency.
+
 ## [0.2.7] - 2022-03-17
 
 ### Changed
