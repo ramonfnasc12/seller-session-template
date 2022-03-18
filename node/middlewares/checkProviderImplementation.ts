@@ -9,6 +9,7 @@ export async function checkProviderImplementation(
   const hasImplementationApp = hasProviderAppImplementation(
     metainfo,
     assets,
+    // TODO: Stop using a hardcoded value
     'vtex.search-segment-graphql@0.1.1'
   )
 
