@@ -30,6 +30,18 @@
     },
     {
       "name": "vtex.graphql-server:resolve-graphql"
+    },
+    {
+      "name": "read-public-registry-assets"
+    },
+    {
+      "name": "read-private-registry-assets"
+    },
+    {
+      "name": "read-workspace-apps"
+    },
+    {
+      "name": "read-workspace-info"
     }
   ],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"

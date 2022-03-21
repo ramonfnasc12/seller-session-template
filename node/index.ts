@@ -9,11 +9,14 @@ import { method, Service } from '@vtex/api'
 
 import type { Clients } from './clients'
 import { clients } from './clients'
+import { checkProviderImplementation } from './middlewares/checkProviderImplementation'
 import { transform } from './middlewares/transform'
 
 declare global {
   // We declare a global Context type just to avoid re-writing ServiceContext<Clients, State> in every handler and resolver
-  type Context = ServiceContext<Clients, RecorderState, CustomContext>
+  type Context = ServiceContext<Clients, RecorderState, CustomContext> & {
+    hasImplementationApp?: boolean
+  }
 
   interface CustomContext extends ParamsContext {
     vtex: CustomIOContext
@@ -27,7 +30,7 @@ export default new Service<Clients, RecorderState, ParamsContext>({
   clients,
   routes: {
     transform: method({
-      POST: [transform],
+      POST: [checkProviderImplementation, transform],
     }),
   },
 })
