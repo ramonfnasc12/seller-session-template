@@ -17,7 +17,7 @@ const isInstalled = (wokspaceMetainfos: AppMetaInfo[], appId: string) => {
 }
 
 const implementsGraphqlSchema = (buildFeatures: any) =>
-  buildFeatures['vtex.graphql-server'].includes('implements-graphql')
+  buildFeatures['vtex.graphql-server']?.includes('implements-graphql')
 
 // The app vtex.search-segment-resolver is just a boilerplate and doesn't need to be called.
 const isBoilerPlateApp = (appName: string) =>
