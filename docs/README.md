@@ -6,7 +6,7 @@ The response will be an array with the available sellers
 
 Within this response, the custom frontend regionalization component must call the code below, in order to regionalize the sellers in the session. The "value" in the request must be sent with all the available sellers in the response from the previous call separeted by ;, such as
 
-````
+```
 GET sellers per region response:
 ["APACManufacturer1",
 "APACManufacturer2",
@@ -15,7 +15,7 @@ GET sellers per region response:
 
 Value sent in the update session request:
 sellername=APACManufacturer1;sellername=APACManufacturer2;sellername=APACManufacturer3;sellername=APACManufacturer4;
-``
+```
 
 ````
 var myHeaders = new Headers();
@@ -40,7 +40,7 @@ fetch("https://session--b2bemea.myvtex.com/api/sessions?items=profile.id,profile
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
-```
+````
 The `search-session` listens to changes in the user session via the `search/session/transform` and writes it to the segment cookie.
 
 When the session API is called:
