@@ -36,7 +36,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://session--b2bemea.myvtex.com/api/sessions?items=profile.id,profile.email,profile.firstName,profile.lastName,profile.isAuthenticated,store.channel,store.countryCode,store.cultureInfo,store.currencyCode,store.currencySymbol,storefront-permissions.priceTables,public.items,public.supportedLocales,search.facets", requestOptions)
+fetch("https://{{accountName}}.myvtex.com/api/sessions?items=profile.id,profile.email,profile.firstName,profile.lastName,profile.isAuthenticated,store.channel,store.countryCode,store.cultureInfo,store.currencyCode,store.currencySymbol,storefront-permissions.priceTables,public.items,public.supportedLocales,search.facets", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
