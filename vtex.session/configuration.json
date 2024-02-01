@@ -3,10 +3,6 @@
     "input": {
       "public": [
         "facets"
-      ],
-      "profile": [
-        "email",
-        "isAuthenticated"
       ]
     },
     "output": {

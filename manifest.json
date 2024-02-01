@@ -1,14 +1,10 @@
 {
-  "name": "search-session",
+  "name": "seller-session-template",
   "vendor": "vtex",
-  "version": "0.2.10",
+  "version": "0.0.1",
   "title": "Search session",
   "description": "App to control the search namespace",
   "categories": [],
-  "dependencies": {
-    "vtex.graphql-server": "1.x",
-    "vtex.search-segment-graphql": "0.x"
-  },
   "builders": {
     "node": "6.x",
     "docs": "0.x",
@@ -18,7 +14,7 @@
     {
       "name": "outbound-access",
       "attrs": {
-        "host": "httpstat.us",
+        "host": "*",
         "path": "*"
       }
     },
@@ -27,9 +23,6 @@
     },
     {
       "name": "colossus-write-logs"
-    },
-    {
-      "name": "vtex.graphql-server:resolve-graphql"
     },
     {
       "name": "read-public-registry-assets"

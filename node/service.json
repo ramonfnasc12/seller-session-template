@@ -5,6 +5,10 @@
     "transform": {
       "path": "/_v/search/session/transform/",
       "public": true
+    },
+    "regionalize": {
+      "path": "/_v/regionalize",
+      "public": true
     }
   }
 }
